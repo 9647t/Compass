@@ -17,4 +17,4 @@
 ## Group
 - Name (@9647t)
 ## Update Log
-** Created Repo 10/31
+* Created Repo 10/31
