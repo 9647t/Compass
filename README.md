@@ -1,7 +1,7 @@
 # Compass
 # [Project Title]
 
-**Classification:** [Your Choice]
+**Classification:** [Simple Game]
 
 **Pitch:** [One compelling sentence]
 
