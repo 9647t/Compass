@@ -15,5 +15,4 @@
 | `...` | ... |
 
 ## Group
-- Name (@github)
-- Name (@github)
+- Name (@9647t)
