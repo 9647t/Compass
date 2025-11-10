@@ -1,5 +1,5 @@
 
-# Tank-RUSH
+# Tank-Rush
 
 **Classification:** A Simple Game
 
