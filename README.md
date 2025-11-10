@@ -1,7 +1,7 @@
 
 # Tank-RUSH
 
-**Classification:** [Simple Game]
+**Classification:** A Simple Game
 
 **Pitch:** Command unstoppable armored beasts in a high-octane battlefield where speed, firepower, and chaos collide.
 
