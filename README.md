@@ -1,5 +1,5 @@
 # Compass
-# [Tank-Fields]
+# Tank-Fields
 
 **Classification:** [Simple Game]
 
