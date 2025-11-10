@@ -3,7 +3,7 @@
 
 **Classification:** [Simple Game]
 
-**Pitch:** [One compelling sentence]
+**Pitch:** [Command unstoppable armored beasts in a high-octane battlefield where speed, firepower, and chaos collide.]
 
 ![Class Diagram](class-diagram.png)
 ![UI Mockup](mockup.png)
