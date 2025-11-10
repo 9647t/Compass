@@ -15,7 +15,7 @@
 | `...` | ... |
 
 ## Group
-- Name Alan Huang (@9647t)
+- Alan Huang (@9647t)
 ## Update Log
 * Created Repo 10/31
 
