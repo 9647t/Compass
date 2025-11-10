@@ -5,7 +5,7 @@
 
 **Pitch:** Command unstoppable armored vehicles in a dense battlefield where speed, firepower, and chaos collide!
 
-![[Class Diagram](class-diagram.png](https://github.com/9647t/Compass/blob/main/src/Screenshot%202025-11-10%20160212.png?raw=true))
+! https://github.com/9647t/Compass/blob/main/src/Screenshot%202025-11-10%20160212.png?raw=true
 ![UI Mockup](mockup.png)
 
 ## Core Classes
