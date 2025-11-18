@@ -17,7 +17,7 @@ void setup() {
   size(800, 500);
 
   img = loadImage("tanksdsd.png");
-  img2 = loadImage("Obstacle.png");   // <-- load your obstacle image
+  img2 = loadImage("Obstacle.png");  
 
   imageMode(CENTER);
 }
@@ -26,7 +26,7 @@ void draw() {
   background(255);
 
   //  draw the obstacle BEFORE the tank
-  image(img2, 200, 200);   // choose any x,y to place it
+  image(img2, 200, 200);   // location
 
   // movement
   float moveX = 0;
@@ -42,7 +42,7 @@ void draw() {
     angle = atan2(moveY, moveX);
   }
 
-  // normalize diagonal
+  // makes diagnoal movment normal
   if (moveX != 0 || moveY != 0) {
     float mag = sqrt(moveX*moveX + moveY*moveY);
     moveX /= mag;
