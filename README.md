@@ -11,7 +11,7 @@
 ## Core Classes
 | Class | Role |
 |-------|------|
-| `Tankfield` | `setup()`, `draw()` |
+| `Tankfield` | `setup()`, `draw()` `functions the main game, score,images, stuff`|
 | `...` | ... |
 
 ## Group
