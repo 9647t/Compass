@@ -12,7 +12,7 @@
 | Class | Role |
 |-------|------|
 | `Tankfield` | `setup()`, `draw()` |
-| `Obstacle` | `setup()`, `draw()` |
+| `Obstacle` | `createObstacles()`, `draw()` |
 | `...` | ... |
 
 ## Group
