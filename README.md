@@ -14,6 +14,8 @@
 | `Tankfield` | `setup()`, `draw()` |
 | `Obstacle` | `setup()`, `draw()` |
 | `Player` | `setup()`, `draw()` |
+| `Enemy` | `setup()`, `draw()` |
+| `AmmunitionRounds` | `setup()`, `draw()` |
 | `...` | ... |
 
 ## Group
