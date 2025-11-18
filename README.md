@@ -12,10 +12,6 @@
 | Class | Role |
 |-------|------|
 | `Tankfield` | `setup()`, `draw()` |
-| `Obstacle` |`draw()` |
-| `Player` |`draw()` |
-| `Enemy` |`draw()` |
-| `AmmunitionRounds` |`draw()` |
 | `...` | ... |
 
 ## Group
