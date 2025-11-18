@@ -1,5 +1,7 @@
-PImage img;     // tank image
-PImage img2;    // obstacle image
+PImage img;     // tank
+PImage img2;    // obstacle
+
+Obstacle obstacle; 
 
 float x = 400;
 float y = 250;
@@ -17,16 +19,17 @@ void setup() {
   size(800, 500);
 
   img = loadImage("tanksdsd.png");
-  img2 = loadImage("Obstacle.png");  
-
+  img2 = loadImage("Obstacle.png");
+// images are temporary
+  obstacle = new Obstacle(200, 200, img2);  // creates the obstacle
   imageMode(CENTER);
 }
 
 void draw() {
   background(255);
 
-  //  draw the obstacle BEFORE the tank
-  image(img2, 200, 200);   // location
+ 
+  obstacle.display();
 
   // movement
   float moveX = 0;
@@ -37,12 +40,10 @@ void draw() {
   if (aDown) moveX -= 1;
   if (dDown) moveX += 1;
 
-  // update angle when moving
-  if (moveX != 0 || moveY != 0) {
-    angle = atan2(moveY, moveX);
-  }
+  // updates the angle when moving
+  if (moveX != 0 || moveY != 0) angle = atan2(moveY, moveX);
 
-  // makes diagnoal movment normal
+  // makes diagonal movement normal
   if (moveX != 0 || moveY != 0) {
     float mag = sqrt(moveX*moveX + moveY*moveY);
     moveX /= mag;
@@ -55,7 +56,7 @@ void draw() {
   // draw tank
   pushMatrix();
   translate(x, y);
-  rotate(angle); 
+  rotate(angle);
   scale(scaleFactor);
   image(img, 0, 0);
   popMatrix();
@@ -74,3 +75,4 @@ void keyReleased() {
   if (key == 's' || key == 'S') sDown = false;
   if (key == 'd' || key == 'D') dDown = false;
 }
+
