@@ -1,4 +1,5 @@
-PImage img;
+PImage img;     // tank image
+PImage img2;    // obstacle image
 
 float x = 400;
 float y = 250;
@@ -6,7 +7,7 @@ float angle = 0;
 float speed = 2.5;
 float scaleFactor = 0.4;
 
-// track key states
+//Key states
 boolean wDown = false;
 boolean aDown = false;
 boolean sDown = false;
@@ -14,14 +15,20 @@ boolean dDown = false;
 
 void setup() {
   size(800, 500);
+
   img = loadImage("tanksdsd.png");
+  img2 = loadImage("Obstacle.png");   // <-- load your obstacle image
+
   imageMode(CENTER);
 }
 
 void draw() {
-  background(0);
+  background(255);
 
-  // movement vector
+  // ⭐ draw the obstacle BEFORE the tank
+  image(img2, 200, 200);   // choose any x,y to place it
+
+  // movement
   float moveX = 0;
   float moveY = 0;
 
@@ -30,12 +37,12 @@ void draw() {
   if (aDown) moveX -= 1;
   if (dDown) moveX += 1;
 
-  // only update angle when moving
+  // update angle when moving
   if (moveX != 0 || moveY != 0) {
     angle = atan2(moveY, moveX);
   }
 
-  // normalize diagonal movement
+  // normalize diagonal
   if (moveX != 0 || moveY != 0) {
     float mag = sqrt(moveX*moveX + moveY*moveY);
     moveX /= mag;
