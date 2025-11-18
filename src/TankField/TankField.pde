@@ -54,12 +54,12 @@ void draw() {
   }
 
   // draw tank
-  pushMatrix();
+  pushMatrix(); //saves the current drawing screen
   translate(x, y);
   rotate(angle);
   scale(scaleFactor);
   image(img, 0, 0);
-  popMatrix();
+  popMatrix(); 
 }
 
 void keyPressed() {
