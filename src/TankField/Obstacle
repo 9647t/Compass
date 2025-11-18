@@ -1,0 +1,14 @@
+class Obstacle {
+  float x, y;
+  PImage img;
+
+  Obstacle(float x, float y, PImage img) {
+    this.x = x;
+    this.y = y;
+    this.img = img;
+  }
+
+  void display() {
+    image(img, x, y);
+  }
+}
