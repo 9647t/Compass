@@ -13,6 +13,7 @@
 |-------|------|
 | `Tankfield` | `setup()`, `draw()` |
 | `Obstacle` | `setup()`, `draw()` |
+| `Player` | `setup()`, `draw()` |
 | `...` | ... |
 
 ## Group
