@@ -25,7 +25,7 @@ void setup() {
 void draw() {
   background(255);
 
-  // ⭐ draw the obstacle BEFORE the tank
+  //  draw the obstacle BEFORE the tank
   image(img2, 200, 200);   // choose any x,y to place it
 
   // movement
