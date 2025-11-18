@@ -11,7 +11,8 @@
 ## Core Classes
 | Class | Role |
 |-------|------|
-| `Main` | `setup()`, `draw()` |
+| `Tankfield` | `setup()`, `draw()` |
+| `Obstacle` | `setup()`, `draw()` |
 | `...` | ... |
 
 ## Group
