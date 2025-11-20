@@ -26,7 +26,7 @@ void setup() {
   obstacle = new Obstacle(200, 200, img2);  // creates the obstacle
   imageMode(CENTER);
 
-  btnStartPlay = new Button("PLAY GAME", 0, 0, 200, 60); // ✅ initialize in setup
+  btnStartPlay = new Button("PLAY GAME", 0, 0, 200, 60); // 
 }
 
 void draw() {
