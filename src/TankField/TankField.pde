@@ -40,19 +40,17 @@ void draw() {
   }
 }
 
-// ----------------------
 // START SCREEN
-// ----------------------
 void drawStartScreen() {
   background(60, 180, 120);
 
   textAlign(CENTER);
   fill(255);
   textSize(50);
-  text("MY TANK GAME", width/2, 120);
+  text("TankField", width/2, 120);
 
   textSize(22);
-  text("Click PLAY to start", width/2, 180);
+  text("Play", width/2, 180);
 
   // Center button
   btnStartPlay.x = width/2 - btnStartPlay.w/2;
@@ -68,9 +66,8 @@ void mousePressed() {
   }
 }
 
-// ----------------------
-// PLAY SCREEN
-// ----------------------
+// Play screen
+
 void drawPlay() {
   background(100);
 
@@ -96,7 +93,7 @@ void drawPlay() {
     y += moveY * speed;
   }
 
-  pushMatrix();
+  pushMatrix(); //save current image
   translate(x, y);
   rotate(angle);
   scale(scaleFactor);
@@ -104,9 +101,7 @@ void drawPlay() {
   popMatrix(); 
 }
 
-// ----------------------
 // KEY HANDLING
-// ----------------------
 void keyPressed() {
   if (key == 'w' || key == 'W') wDown = true;
   if (key == 'a' || key == 'A') aDown = true;
@@ -121,9 +116,7 @@ void keyReleased() {
   if (key == 'd' || key == 'D') dDown = false;
 }
 
-// ----------------------
-// BUTTON CLASS
-// ----------------------
+// button class
 class Button {
   String label;
   float x, y, w, h;
