@@ -40,7 +40,7 @@ void draw() {
   }
 }
 
-// START SCREEN
+// start screen
 void drawStartScreen() {
   background(60, 180, 120);
 
@@ -93,15 +93,15 @@ void drawPlay() {
     y += moveY * speed;
   }
 
-  pushMatrix(); //save current image
+  pushMatrix(); //save transformation state
   translate(x, y);
   rotate(angle);
   scale(scaleFactor);
   image(img,40, 20);
-  popMatrix(); 
+  popMatrix(); //restore previous state
 }
 
-// KEY HANDLING
+// key
 void keyPressed() {
   if (key == 'w' || key == 'W') wDown = true;
   if (key == 'a' || key == 'A') aDown = true;
