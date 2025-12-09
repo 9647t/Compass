@@ -18,4 +18,4 @@
 - Alan Huang (@9647t)
 ## Update Log
 * Created Repo 10/31
-* Almost finished game (70%) 12/9
+* Creating the final parts of the game 12/9
