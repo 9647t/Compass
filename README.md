@@ -18,5 +18,6 @@
 - Alan Huang (@9647t)
 ## Update Log
 * Created Repo 10/31
+* started working on project 11/1
 * Creating the final parts of the game 12/9
 * Finished game 12/11
